@@ -1,0 +1,118 @@
+/* 
+body{
+  background-color: #ccc;
+  position: relative;
+} */
+.card{
+ 
+  height: 50vh;
+  width: 30vw;
+  border: 2px solid black;
+  /* border-radius: 25px; */
+  background-color: rgba(222, 222, 222, 0.962);
+}
+.img{
+  height: 50%;
+  width: 100%;
+  /* border-radius: 25px; */
+}
+.search-bar {
+  margin: 20px;
+  padding: 10px;
+  width: 300px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.songbtn{
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+ }
+/* .play{
+  width: 40px;
+  height: 40px;
+  background-color: #1fdf64;
+  border-radius: 50%;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 88px;
+  right: 17px;
+  opacity: var(--a);
+  transition: all 1s ease-out;
+ } */
+ /* .playbar{
+  position: fixed;
+  bottom: 20px;
+  background-color: rgb(212, 204, 204);
+  border-radius: 10px;
+  padding: 12px;
+  width: 67vw;
+  min-height: 55px;
+  color: aqua;
+ } */
+ .seekbar{
+  height: 6px;
+  width: 90%;
+  /* border: 1px solid skyblue; */
+  background-color: #363535;
+  border-radius: 10px;
+  position: absolute; 
+  /* bottom: 0; */
+  margin: 10px;
+  cursor: pointer;
+ }
+ .circle{
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
+  background-color: #363535;
+  position: relative; 
+  bottom: 4px; 
+  left: 0%;
+  transition: left 0.5s;
+ }
+ /* this will give to all */
+ .screen{
+  width: calc(100% - 100px);  
+  height: 100vh;
+  background-color: #4a8ba9;
+  opacity: 0.8;
+  background-image: radial-gradient(circle at center center, #000000, #4a8ba9), repeating-radial-gradient(circle at center center, #000000, #000000, 15px, transparent 29px, transparent 12px);
+  background-blend-mode: multiply;
+  /* border:2px solid white; */
+  position: absolute;
+  left: 100px;
+
+
+ /* background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20240716/pngtree-exquisite-realistic-artwork-zoro-from-one-piece-brandishing-his-katana-with-image_16015709.jpg); */
+ }
+
+
+ circle {
+  transition: all 1s ease-in-out;
+  transform: rotate(93deg);
+  transform-origin: 50% 50%;
+}
+
+image.active {
+  animation: rotation 30s infinite linear;
+  transform-origin: 50% 50%;
+}
+
+.progress-circle {
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
